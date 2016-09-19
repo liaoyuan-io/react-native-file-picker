@@ -1,4 +1,4 @@
-package io.liaoyuan.reactnative.fileaccessframework;
+package io.liaoyuan.reactnative.filepicker;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

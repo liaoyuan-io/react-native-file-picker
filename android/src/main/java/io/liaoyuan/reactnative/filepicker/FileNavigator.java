@@ -1,4 +1,4 @@
-package io.liaoyuan.reactnative.fileaccessframework;
+package io.liaoyuan.reactnative.filepicker;
 
 import android.net.Uri;
 import com.facebook.react.bridge.Promise;
@@ -6,12 +6,12 @@ import com.facebook.react.bridge.Promise;
 import android.app.Activity;
 import android.content.Intent;
 
-public class FilePicker extends Activity{
+public class FileNavigator extends Activity{
     private static final int PICK_FILE_REQUEST_CODE = 42;
     private static final String E_PICK_FILE = "E_PICK_FILE";
     private Promise promise;
 
-    FilePicker(final Promise promise) {
+    FileNavigator(final Promise promise) {
         this.promise = promise;
     }
 

@@ -1,25 +1,25 @@
-package io.liaoyuan.reactnative.fileaccessframework;
+package io.liaoyuan.reactnative.filepicker;
 
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
-class FileAccessFramework extends ReactContextBaseJavaModule {
+class FilePicker extends ReactContextBaseJavaModule {
 
-    FileAccessFramework(ReactApplicationContext reactContext) {
+    FilePicker(ReactApplicationContext reactContext) {
         super(reactContext);
     }
 
     @Override
     public String getName() {
-        return "FileAccessFramework";
+        return "FilePicker";
     }
 
     @ReactMethod
     public void pickDocument(final Promise promise) {
-        FilePicker picker = new FilePicker(promise);
-        picker.launch();
+        FileNavigator navigator = new FileNavigator(promise);
+        navigator.launch();
     }
 
 }
