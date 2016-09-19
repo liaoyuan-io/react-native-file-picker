@@ -1,4 +1,4 @@
-package java.io.liaoyuan.reactnative.fileaccessframework;
+package io.liaoyuan.reactnative.fileaccessframework;
 
 import android.net.Uri;
 import com.facebook.react.bridge.Promise;

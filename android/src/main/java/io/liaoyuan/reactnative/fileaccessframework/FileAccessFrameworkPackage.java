@@ -1,4 +1,4 @@
-package java.io.liaoyuan.reactnative.fileaccessframework;
+package io.liaoyuan.reactnative.fileaccessframework;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
