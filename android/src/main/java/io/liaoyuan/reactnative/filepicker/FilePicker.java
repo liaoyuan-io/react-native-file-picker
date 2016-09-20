@@ -16,7 +16,7 @@ class FilePicker extends ReactContextBaseJavaModule implements ActivityEventList
 
     private Promise mFilePickerPromise;
 
-    FilePicker(ReactApplicationContext reactContext) {
+    public FilePicker(ReactApplicationContext reactContext) {
         super(reactContext);
 
         reactContext.addActivityEventListener(this);
@@ -50,7 +50,8 @@ class FilePicker extends ReactContextBaseJavaModule implements ActivityEventList
         }
     }
 
-    @Override
+    public void onNewIntent(Intent intent) {}
+
     public void onActivityResult(final int requestCode, final int resultCode, final Intent intent) {
         if (requestCode == FILE_PICKER_REQUEST_CODE) {
             if (mFilePickerPromise != null) {
