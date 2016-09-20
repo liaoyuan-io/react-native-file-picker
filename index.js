@@ -2,4 +2,4 @@
 
 import { NativeModules } from 'react-native';
 
-export default module.exports = NativeModules.FileAccessFramework;
+export default module.exports = NativeModules.FilePicker;
